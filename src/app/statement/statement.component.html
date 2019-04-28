@@ -1,0 +1,27 @@
+<h4>{{message}} </h4>
+<h4>Example of Loops</h4>
+<div>
+    <table>
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+        </tr>
+        <tr *ngFor ="let item of list">
+            <td>{{ item.fName }}</td>
+            <td>{{ item.lName }}</td>
+        </tr>
+
+    </table>
+</div>
+<h4>Example of Conditional Statement</h4>
+<div>
+    <button (click)="showDiv()">Show</button>
+    <div *ngIf="show">
+     I am visible through ngIf condition
+    </div>
+    <br/>
+    <br/>
+    <div [hidden]="!show">
+        I am visible through hidden
+    </div>
+</div>

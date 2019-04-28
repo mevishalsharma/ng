@@ -1,0 +1,11 @@
+<h3>This is parent component</h3>
+<br/>
+<br/>
+<br/>
+<fieldset>
+    <legend>Child Component</legend>
+    <app-child [inputChildValue]=inputParentValue  (outputChildValue)="getChildData($event)"></app-child>
+</fieldset>
+
+<br/>
+Data from Child : {{valueFromChild}}

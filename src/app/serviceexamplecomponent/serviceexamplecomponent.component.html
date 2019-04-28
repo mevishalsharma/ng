@@ -1,0 +1,16 @@
+<div>My name is {{servicetitle}}</div>
+<br/>
+<table>
+    <tr>
+        <td>First Name</td>
+        <td>Last Name</td>
+    </tr>
+    <tr *ngFor="let data of studentList">
+        <td>
+            {{data.fname}}
+        </td>
+        <td>
+            {{data.lname}}
+        </td>
+    </tr>
+</table>
